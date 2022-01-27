@@ -1,0 +1,23 @@
+<%= form_with model: user do |form| %>
+  <div>
+    <%= form.label :username %><br>
+    <%= form.text_field :username %>
+    <%= render "error", user: user %>
+  </div>
+
+  <div>
+  <%= form.label :email %><br>
+  <%= form.text_field :email %>
+  <%= render "error", user: user %>
+  </div>
+
+  <div>
+  <%= form.label :password %><br>
+  <%= form.text_field :password %>
+  <%= render "error", user: user %>
+  </div>
+
+  <div>
+  <%= form.submit %>
+  </div>
+<% end %>
